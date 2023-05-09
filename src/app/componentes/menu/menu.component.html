@@ -1,0 +1,50 @@
+<div class="grid grid-cols-12">
+
+    <div class="col-span-3 bg-blue-600 h-screen items-center flex flex-col justify-between text-xl">
+      <img src="../../assets/imagenes/menu1.png" alt="menu-pic" class="rounded-full mt-16">
+      <div class="space-y-2 flex flex-col">
+        <div >
+          <i class="fas fa-book fa-lg text-white"></i>
+          <a class="text-white py-1 px-2 rounded nav-link" routerLink="reservas">Registro de reservas</a>
+        </div>
+        <div>
+  
+          <i class="fas fa-search mr-2 text-white fa-lg"></i>
+          <a class="text-white nav-link" routerLink="busqueda">Busqueda</a>
+        </div>
+        <div>
+  
+          <i class="fas fa-door-closed mr-2 text-white fa-lg"></i>
+          <a class="text-white nav-link" routerLink="">Salir</a>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <div class="col-span-9 bg-white h-screen space-y-2">
+      <div class="bg-blue-400 h-36 text-white mt-24 font-sans text-center">
+        
+        <span class="text-3xl">
+  
+          Sistema de Reservas Alura
+        </span>
+  
+      
+      <p class="text-left py-4 px-4 text-3xl">La fecha y hora actual es: {{ fechaActual }}<app-current-time></app-current-time>
+      </p>
+  
+    </div>
+  <div class="space-y-3 mx-10">
+    <span class="font-bold mx-16 text-3xl">Bienvenido</span>
+    <p class=" text-slate-500 text-xl">
+      Sistema de Reservas del Hotel Alura. Controle y administre de forma óptima y fácil el flujo de reservas y de huespédes del hotel.
+    </p>
+    <p class=" text-slate-500 text-xl">
+  Nuestra herramienta le permitirá llevar control completo y detallado de sus reservas y huéspedes, tendrá acceso a herramientas especiales para tareas específicas como:
+    </p>
+    
+      <li class="mx-16 text-slate-500 text-xl">Registro de Reservas y Huéspedes</li>
+      <li class="mx-16 text-slate-500 text-xl">Edición de Reservas y Huéspedes</li>
+      <li class="mx-16 text-slate-500 text-xl">Eliminar todo tipo de registros</li>
+    
+  </div>
+  </div>

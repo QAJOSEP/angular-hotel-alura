@@ -1,0 +1,71 @@
+<div class="grid grid-cols-12">
+
+    <!-- Formulario de reservación -->
+    <div class="col-span-6 border-8 space-y-4">
+      <form class="bg-white shadow-md rounded mt-32 px-32 flex flex-col">
+        <h1 class="font-bold text-blue-400 px-4 py-4">SISTEMA DE RESERVAS</h1>
+        <!-- Checkin -->
+        <div class="mb-4">
+          <label class="block text-slate-400 font-bold mb-2" for="checkin">
+            FECHA DE CHECK IN
+          </label>
+          <input
+            class="appearance-none border rounded w-60 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="checkin" type="date">
+        </div>
+        <!-- Checkout -->
+        <div class="mb-4">
+          <label class="block text-slate-400 font-bold mb-2" for="checkout">
+            FECHA DE CHECK OUT
+          </label>
+          <input
+            class="appearance-none border rounded w-60 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="checkout" type="date">
+        </div>
+        <!-- Valor de la reserva -->
+        <div class="mb-4">
+          <label class="block text-gray-700 font-bold mb-2" for="total-price">
+            Valor de la reserva
+          </label>
+          <input
+            class="appearance-none border rounded w-60 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="total-price" type="number" placeholder="$" [value]="calculateTotal()">
+        </div>
+        <!-- Forma de pago -->
+        <div class="mb-4">
+          <label class="block text-gray-700 font-bold mb-2" for="forma-pago">
+            Forma de pago
+          </label>
+          <select
+            class="appearance-none border rounded w-60 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="forma-pago">
+            <option>Seleccione una opción</option>
+            <option>EFECTIVO</option>
+            <option>CREDITO</option>
+            <option>DEBITO</option>
+          </select>
+        </div>
+        <!-- Botón continuar -->
+        <div class="flex items-center justify-between">
+          <a class="nav-link" routerLink="/login/menu/reservas/registro-huesped">
+  
+            <button
+              class="flex bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button">
+              CONTINUAR
+            </button>
+          </a>
+          <a class="nav-link" routerLink="/login/menu">
+            <button type="submit" class=" flex  py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+              REGRESAR
+            </button>
+          </a>
+        </div>
+      </form>
+    </div>
+  
+  
+    <div class="col-span-6  border-8">
+      <img src="../../assets/imagenes/reservas1.png" alt="" class="w-full h-screen">
+    </div>
+  </div>

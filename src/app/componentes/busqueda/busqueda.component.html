@@ -1,0 +1,98 @@
+<div>
+    <span class="flex justify-center mt-12 font-bold text-2xl text-blue-500">SISTEMA DE BÚSQUEDA</span>
+  </div>
+  <div class="mt-8 mr-4 ">
+    <img src="../../../assets/imagenes/menu1.png" alt="img-busqueda" class="float-left ml-4 px-14 py14">
+    <button class="block px-4 py-4 bg-blue-500 hover:bg-blue-900  rounded-lg float-right  mt-20 ">
+      <i class="fas fa-search mr-2 text-white fa-lg"></i>
+      
+      <a class="text-white font-semibold   nav-link" routerLink="">BUSCAR</a>
+    </button>
+    <input class="border border-gray-400 rounded-lg px-12 py-4 mr-3 float-right mt-20" type="text" placeholder="Ingrese su busqueda">
+  </div>
+  <section class="relative py-16 bg-blueGray-50">
+  <div class="w-full mb-12 px-4">
+    
+    <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded 
+    bg-blue-900 text-white">
+      <div class="rounded-t mb-0 px-4 py-3 border-0">
+        <div class="flex flex-wrap items-center">
+          <div class="relative w-full px-4 max-w-full flex-grow flex-1 ">
+            <p class="font-bold text-lg text-white">HUESPED</p>
+          </div>
+        </div>
+      </div>
+      <div class="block w-full overflow-x-auto ">
+        <table class="items-center w-full bg-transparent border-collapse">
+          <thead>
+            <tr>
+              <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blue-800 text-blue-300 border-blue-700">ID</th>
+              <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blue-800 text-blue-300 border-blue-700">NOMBRE</th>
+              <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blue-800 text-blue-300 border-blue-700">APELLIDO</th>
+              <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blue-800 text-blue-300 border-blue-700">NACIMIENTO</th>
+              <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blue-800 text-blue-300 border-blue-700">NACIONALIDAD</th>
+              <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blue-800 text-blue-300 border-blue-700">TELEFONO</th>
+              <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blue-800 text-blue-300 border-blue-700">EMAIL</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 font-semibold" *ngFor="let p of huespedes"> {{p.id}} </th>
+              <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 font-semibold" *ngFor="let p of huespedes"> {{p.nombre}} </td>
+              <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 font-semibold" *ngFor="let p of huespedes"> {{p.apellido}}</td>
+              <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 font-semibold" *ngFor="let p of huespedes"> {{p.nacimiento}}</td>
+              <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 font-semibold" *ngFor="let p of huespedes"> {{p.nacionalidad}}</td>
+              <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 font-semibold" *ngFor="let p of huespedes"> {{p.telefono}}</td>
+              <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 font-semibold" *ngFor="let p of huespedes"> {{p.email}}</td>
+              
+            </tr>
+            <tr>
+              <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 font-semibold" *ngFor="let p of huespedes"> {{p.id}} </th>
+              <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 font-semibold" *ngFor="let p of huespedes"> {{p.nombre}} </td>
+              <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 font-semibold" *ngFor="let p of huespedes"> {{p.apellido}}</td>
+              <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 font-semibold" *ngFor="let p of huespedes"> {{p.nacimiento}}</td>
+              <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 font-semibold" *ngFor="let p of huespedes"> {{p.nacionalidad}}</td>
+              <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 font-semibold" *ngFor="let p of huespedes"> {{p.telefono}}</td>
+              <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 font-semibold" *ngFor="let p of huespedes"> {{p.email}}</td>
+              
+            </tr>
+  
+            
+          </tbody>
+        </table>
+        
+      </div>
+    </div>
+    <!-- button -->
+    <div>
+    <button class="block px-4 py-4 bg-blue-500 hover:bg-blue-900  rounded-lg float-right nav-link" routerLink="/login/menu/busqueda">
+    <i class="fas fa-trash mr-2 text-white fa-lg"></i>
+  
+      <a class="text-white font-semibold">ELIMINAR</a>
+    </button>
+    <button class="block px-4 py-4 bg-blue-500 hover:bg-blue-900 mr-4 rounded-lg float-right  nav-link" routerLink="/login/menu/busqueda">
+    <i class="fas fa-pencil-alt mr-2 text-white fa-lg"></i>
+  
+      <a class="text-white font-semibold"  >EDITAR</a>
+    </button>
+    <button class="block px-4 py-4 bg-blue-500 hover:bg-blue-900 mr-4 rounded-lg float-right  nav-link" routerLink="/login/menu/">
+    <i class="fas fa-undo mr-2 text-white fa-lg"></i>
+  
+      <a class="text-white font-semibold"  >REGRESAR</a>
+    </button>
+  </div>
+    <!-- footer -->
+  </div>
+      <footer class="relative pt-8 pb-6 mt-8">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap items-center md:justify-between justify-center">
+            <div class="w-full md:w-6/12 px-4 mx-auto text-center">
+              <div class="text-sm text-slate-500 font-semibold py-1">
+                Hecho con  <a href="https://www.github/qajosep" class="text-blueGray-500 hover:text-slate-800" target="_blank">Amor</a> por <a href="https://www.linkedin.com/in/java-developer-jose/" class="text-blueGray-500 hover:text-slate-800" target="_blank"> José Pillado</a>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </section>

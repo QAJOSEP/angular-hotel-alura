@@ -1,0 +1,89 @@
+<div class="grid grid-cols-12">
+    <div class="col-span-6 ">
+        <img src="../../assets/imagenes/registro1.png" alt="reservas1" class="w-full h-full">
+    </div>
+<div class="col-span-6 w-auto  bg-gray-100 flex flex-col justify-center py-4 ">
+    <div class="sm:mx-auto sm:w-full sm:max-w-md">
+      <h2 class="text-center text-3xl font-extrabold text-blue-500">
+        REGISTRO DE HUÉSPED
+      </h2>
+    </div>
+  
+    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+      <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+        <form class="space-y-4" action="#" method="POST">
+          <div>
+            <label for="name" class="block text-sm font-bold text-slate-400">
+              NOMBRE
+            </label>
+            <div class="mt-1">
+              <input id="name" name="name" type="text" autocomplete="name" required class="appearance-none block w-full px-3 py-2 border-b-2 border-blue-300  shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:placeholder-gray-500 sm:text-sm">
+            </div>
+          </div>
+          <div>
+            <label for="apellido" class="block text-sm font-bold text-slate-400">
+              APELLIDO
+            </label>
+            <div class="mt-1">
+              <input id="apellido" name="apellido" type="text" autocomplete="apellido" required class="appearance-none block w-full px-3 py-2 border-b-2 border-blue-300  shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:placeholder-gray-500 sm:text-sm">
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <label class="block text-slate-400 font-bold mb-2" for="nacimiento">
+              FECHA DE NACIMIENTO
+            </label>
+            <input class="appearance-none border-b-2 border-blue-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nacimiento" type="date">
+          </div>
+
+          <div class="mb-4">
+            <label class="block text-slate-400 font-bold mb-2" for="nacionalidad">
+              NACIONALIDAD
+            </label>
+            <select class="appearance-none border-b-2 border-blue-300  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nacionalidad">
+              <option>Seleccione una opción</option>
+              <option>MEXICO</option>
+              <option>BRASIL</option>
+              <option>ARGENTINA</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="telefono" class="block text-sm font-bold text-slate-400">
+              TELEFONO
+            </label>
+            <div class="mt-1">
+              <input id="telefono" name="telefono" type="telefono" autocomplete="telefono" required class="appearance-none block w-full px-3 py-2 border-b-2 border-blue-300  shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:placeholder-gray-500 sm:text-sm">
+            </div>
+          </div>
+          <div>
+            <label for="telefono" class="block text-sm font-bold text-slate-400">
+              NUMERO DE RESERVA
+            </label>
+            <div class="mt-1">
+              <input id="telefono" name="telefono" type="telefono" autocomplete="telefono" required class="appearance-none block w-full px-3 py-2 border-b-2 border-blue-300  shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:placeholder-gray-500 sm:text-sm">
+            </div>
+          </div>
+  
+          
+  
+          <div class="space-x-1">
+            <a class="nav-link" routerLink="/login/menu">
+
+              <button type="submit" class="w-50 float-right py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                GUARDAR
+              </button>
+            </a>
+            <a class="nav-link" routerLink="/login/menu/reservas">
+              <button type="submit" class=" float-left py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                REGRESAR
+              </button>
+            </a>
+            
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  
